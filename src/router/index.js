@@ -24,6 +24,10 @@ export default new Router({
     {
       path: '/previewer',
       component: () => import('../components/previewer.vue')
+    },
+    {
+      path: '/turn-card',
+      component: () => import('../components/turn-card.vue')
     }
   ]
 })

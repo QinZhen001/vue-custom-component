@@ -14,8 +14,13 @@
       <li>
         <router-link to="/previewer">previewer</router-link>
       </li>
+      <li>
+        <router-link to="/turn-card">turn-card</router-link>
+      </li>
     </ul>
-    <router-view></router-view>
+    <div>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -26,12 +31,9 @@
 </script>
 
 <style type="text/less" lang="less" scoped>
-  #app {
-    padding: 10px;
-  }
-
   .nav {
-    height: 50px;
+    margin: 10px;
+    min-height: 50px;
     width: 100%;
     &::after {
       //为了li垂直居中 设置一个伪类元素撑开父元素
@@ -41,7 +43,6 @@
       height: 100%;
     }
     li {
-      //只有display: inline-block,vertical-align才会起作用
       display: inline-block;
       vertical-align: middle;
       padding: 0 10px;
